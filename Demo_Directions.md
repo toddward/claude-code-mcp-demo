@@ -1,3 +1,4 @@
+# Initial Configuration
 1. Create a directory for your build to work out of:
 
     ```
@@ -27,6 +28,8 @@
     * Claude Code generates a polished React UI with Tailwind
     * Context7 provides current React/Tailwind documentation
     * Interactive Pokémon cards with stats and ratings
+    * Application provides a filterable solution for different types of Pokémon.
+    * When clicking on cards it displays the attributes of the Pokémon.
 
     ## Configuration
 
@@ -72,8 +75,14 @@
     ![alt text](image-4.png)
 
 
+# Lets Code, Err, Vibe Code
 
+1. Our simple vibe coding approach is mostly ready to go.  This approach is simplistic in nature, there will be different results for almost everyone.  (Note: Spec-driven development will drive a more concise approach to output -- more on this later :-) )
 
+2. Enter the following prompt to get started:
+    ```
+    Utilizing the provided context within @CLAUDE.md please develop the example application found in the overview section.  Please note we're specifically using React with Tailwind to define this project.
+    ```
 
 
 

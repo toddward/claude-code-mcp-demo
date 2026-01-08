@@ -8,10 +8,13 @@ This demo is supposed to be showing how we utilize MCPs within the wider develop
 
 The application is utilizing the React and Tailwind frameworks to help generate a simple application that does the following:
 
-Watch Claude Code use MCP servers to build a Pokémon fan site
+Watch Claude Code use MCP servers to build a Pokémon fan site:
+
     * Claude Code generates a polished React UI with Tailwind
     * Context7 provides current React/Tailwind documentation
     * Interactive Pokémon cards with stats and ratings
+    * Application provides a filterable solution for different types of Pokémon.
+    * When clicking on cards it displays the attributes of the Pokémon.
 
 ## Configuration
 
