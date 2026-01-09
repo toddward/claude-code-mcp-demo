@@ -1,5 +1,5 @@
 # Initial Configuration
-1. Create a directory for your build to work out of:
+1. Create a directory for your build to work out of using the terminal of your choice:
 
     ```
     mkdir mcp_demo
@@ -11,7 +11,7 @@
     cd mcp_demo
     ```
 
-3. Create your `Claude.md` file.  This file will act as a jumping off point contextually for your application.  Copy the following contents:
+3. Create your `Claude.md` file.  This file will act as a jumping off point contextually for your application (use VSCode, or Terminal VIM).  Copy the following contents:
 
     ```
     # CLAUDE.md
@@ -92,7 +92,7 @@
 
 6. Once you're okay with the plan, proceed with executing your first prompt.  Claude will ask about tool execution, please answer accordingly.  Wait for the prompt to finish and check out your newly created website.
 
-7. Update your `.mcp.json` to contain the following.  
+7. Update your `.mcp.json` to contain the following newly added MCP servers:  
 
     ```
     {
