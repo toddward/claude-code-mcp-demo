@@ -53,7 +53,7 @@
 
     ![alt text](image-3.png)
 
-4. Lets get some initial MCP servers configured for your application. Create a new `.mcp.json` and copy the following in.  This file is locally scoped to your project:
+4. Lets get some initial MCP servers configured for your application. Create a new `.mcp.json` and copy the following in (NOTE THE FILE CONTAINS A '.' AT THE BEGINNING).  This file is locally scoped to your project:
 
     ```
     {
