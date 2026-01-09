@@ -66,7 +66,7 @@
     }
     ```
 
-6. validate that your MCP server is up and running using the `/mcp` command.
+6. Validate that your MCP server is up and running using the `/mcp` command.
 
     ![Validate MCP Servers](image.png)
 
@@ -79,11 +79,50 @@
 
 1. Our simple vibe coding approach is mostly ready to go.  This approach is simplistic in nature, there will be different results for almost everyone.  (Note: Spec-driven development will drive a more concise approach to output -- more on this later :-) )
 
-2. Enter the following prompt to get started:
+2. Ensure that you're in the working directory `mcp_demo` and Claude is running.
+
+3. Press `shift + tab` until you see planning mode.
+
+4. Enter the following prompt to get started:
     ```
-    Utilizing the provided context within @CLAUDE.md please develop the example application found in the overview section.  Please note we're specifically using React with Tailwind to define this project.
+    Utilizing the provided context within @CLAUDE.md please develop the example application found in the overview section.  Please note we're specifically using React with Tailwind to define this project.  Do not test at this time just start up the server.  
     ```
 
+5. Before Claude executes, note the plan of execution.  You have the opportunity to correct the course of action before it actually begins.
+
+6. Once you're okay with the plan, proceed with executing your first prompt.  Claude will ask about tool execution, please answer accordingly.  Wait for the prompt to finish and check out your newly created website.
+
+7. Update your `.mcp.json` to contain the following.  
+
+    ```
+    {
+        "mcpServers": {
+            "context7": {
+                "command": "npx",
+                "args": ["-y", "@upstash/context7-mcp"]
+            },
+            "playwright": {
+                "type": "stdio",
+                "command": "npx",
+                "args": [
+                    "@playwright/mcp@latest"
+                ],
+                "env": {}
+            }
+        }
+    }
+    ```
+
+8. Ensure your Claude Code is restarted, press `Ctrl + c, Ctrl + c` (twice).  Restart Claude to pick up the new MCP changes.  Please note that on first run the Playwright MCP server is designed to automatically handle the installation of the necessary browser binaries, including Chromium, Firefox, and WebKit, when they are first required. 
+
+9. With Claude running in the same working directory as before, execute the following prompt:
+
+    ```
+    Please ensure my application is running as a background task.  Using playwright-mcp please: 
+    * Validate the filtering for various Pokemon characters works
+    * Validate that each card when clicked displays detailed information.
+    * Validate the search functionality shows cards searched for (Charizard for instance)
+    ```
 
 
 
